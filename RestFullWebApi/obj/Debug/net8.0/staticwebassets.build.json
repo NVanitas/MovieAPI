@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "cCHaBN6TAFUWZnPr+2coAzWtILv+plV7rAtMmpk1SZc=",
+  "Source": "RestFullWebApi",
+  "BasePath": "_content/RestFullWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
