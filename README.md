@@ -1,7 +1,3 @@
-Claro! Se o seu projeto foi feito com **.NET 8**, basta atualizar o README para refletir isso. Aqui está o README atualizado:
-
----
-
 # MovieApi
 
 **MovieApi** é uma API RESTful desenvolvida com **.NET 8** e **Entity Framework Core**. Esta API permite realizar operações CRUD (Create, Read, Update, Delete) em um banco de dados SQL Server para gerenciar um catálogo de filmes.
