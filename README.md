@@ -93,10 +93,6 @@ Se você deseja contribuir para o projeto:
 4. Push para a branch: `git push origin minha-feature`.
 5. Abra um Pull Request.
 
-## Licença
-
-Este projeto está licenciado sob a **MIT License**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## Contato
 
 Caso tenha dúvidas ou queira entrar em contato, sinta-se à vontade para abrir um **Issue** ou mandar uma mensagem diretamente!
