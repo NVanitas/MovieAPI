@@ -35,7 +35,7 @@ A MovieApi fornece os seguintes endpoints:
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/seu-usuario/MovieApi.git
+    git clone https://github.com/NVanitas/MovieApi.git
     cd MovieApi
     ```
 
