@@ -100,7 +100,3 @@ Este projeto está licenciado sob a **MIT License**. Veja o arquivo [LICENSE](LI
 ## Contato
 
 Caso tenha dúvidas ou queira entrar em contato, sinta-se à vontade para abrir um **Issue** ou mandar uma mensagem diretamente!
-
----
-
-Esse README está agora atualizado para refletir que o projeto foi feito com **.NET 8**.
