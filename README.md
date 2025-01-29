@@ -1,6 +1,6 @@
 # MovieApi
 
-**MovieApi** é uma API RESTful desenvolvida com **.NET 8** e **Entity Framework Core**. Esta API permite realizar operações CRUD (Create, Read, Update, Delete) em um banco de dados SQL Server para gerenciar um catálogo de filmes.
+MovieApi é uma API RESTful desenvolvida com .NET 8 e Entity Framework Core. Esta API permite realizar operações CRUD (Create, Read, Update, Delete) em um banco de dados SQL Server para gerenciar um catálogo de filmes.
 
 ## Descrição
 
@@ -14,33 +14,36 @@ A MovieApi fornece os seguintes endpoints:
 
 ## Tecnologias
 
-- **.NET 8**
-- **Entity Framework Core**
-- **SQL Server** para persistência de dados
+- **.NET 8**: Framework de desenvolvimento utilizado.
+- **Entity Framework Core**: ORM para interação com o banco de dados SQL Server.
+- **SQL Server**: Banco de dados utilizado para persistência dos dados.
 
 ## Funcionalidades
 
-- Permite realizar operações CRUD em filmes.
-- Utiliza o **Entity Framework Core** para se conectar ao banco de dados e executar operações.
+- Realiza operações **CRUD** em filmes.
+- Utiliza o **Entity Framework Core** para conectar-se ao banco de dados e executar operações.
 - Oferece segurança de dados com **SQL Server**.
 
 ## Como Rodar o Projeto
 
 ### Requisitos
 
-- **.NET 8 SDK**: [Download .NET 8 SDK](https://dotnet.microsoft.com/download/dotnet)
+- **.NET 8 SDK**: [Download .NET 8 SDK](https://dotnet.microsoft.com/download)
 - **SQL Server**: Pode ser instalado localmente ou utilizar o **SQL Server Express**.
 
 ### Passo a Passo
 
 1. **Clone o repositório**:
+
     ```bash
     git clone https://github.com/NVanitas/MovieApi.git
     cd MovieApi
     ```
 
-2. **Configure a string de conexão**:
-    No arquivo `appsettings.json`, configure a string de conexão com o seu banco de dados SQL Server:
+2. **Configure a string de conexão**: 
+
+   No arquivo `appsettings.json`, configure a string de conexão com o seu banco de dados SQL Server:
+
     ```json
     "ConnectionStrings": {
       "MovieContext": "Server=seu-servidor;Database=MovieContext;Trusted_Connection=True;TrustServerCertificate=True"
@@ -48,51 +51,74 @@ A MovieApi fornece os seguintes endpoints:
     ```
 
 3. **Crie o banco de dados**:
-    Execute o comando de migração para criar o banco de dados:
+
+   Execute o comando de migração para criar o banco de dados:
+
     ```bash
     dotnet ef database update
     ```
 
 4. **Rode o projeto**:
-    Após as configurações, rode a API localmente com o comando:
+
+   Após as configurações, rode a API localmente com o comando:
+
     ```bash
     dotnet run
     ```
 
-    A API estará disponível em `https://localhost:5001`.
+   A API estará disponível em [https://localhost:5001](https://localhost:5001).
 
 ## Endpoints
 
 - **GET /api/Movies**: Recupera todos os filmes.
-    - Resposta: Lista de filmes em formato JSON.
-  
+  - **Resposta**: Lista de filmes em formato JSON.
+
 - **GET /api/Movies/{id}**: Recupera um filme específico.
-    - Parâmetros: `id` - ID do filme.
-    - Resposta: Detalhes do filme em formato JSON.
+  - **Parâmetros**: `id` - ID do filme.
+  - **Resposta**: Detalhes do filme em formato JSON.
 
 - **POST /api/Movies**: Cria um novo filme.
-    - Corpo: Objeto JSON com os dados do filme (Título, Gênero, Data de lançamento).
-    - Resposta: O filme recém-criado com o ID gerado.
+  - **Corpo**: Objeto JSON com os dados do filme (Título, Gênero, Data de lançamento).
+  - **Resposta**: O filme recém-criado com o ID gerado.
 
 - **PUT /api/Movies/{id}**: Atualiza um filme existente.
-    - Parâmetros: `id` - ID do filme.
-    - Corpo: Objeto JSON com os dados atualizados do filme.
-    - Resposta: Status 204 (Sem conteúdo) se bem-sucedido.
+  - **Parâmetros**: `id` - ID do filme.
+  - **Corpo**: Objeto JSON com os dados atualizados do filme.
+  - **Resposta**: Status 204 (Sem conteúdo) se bem-sucedido.
 
 - **DELETE /api/Movies/{id}**: Exclui um filme.
-    - Parâmetros: `id` - ID do filme.
-    - Resposta: Status 204 (Sem conteúdo) se bem-sucedido.
+  - **Parâmetros**: `id` - ID do filme.
+  - **Resposta**: Status 204 (Sem conteúdo) se bem-sucedido.
 
 ## Contribuição
 
 Se você deseja contribuir para o projeto:
 
-1. Fork o repositório.
-2. Crie uma branch com sua feature: `git checkout -b minha-feature`.
-3. Commit suas alterações: `git commit -am 'Adiciona nova feature'`.
-4. Push para a branch: `git push origin minha-feature`.
-5. Abra um Pull Request.
+1. **Fork** o repositório.
+2. Crie uma **branch** com sua feature:
+
+    ```bash
+    git checkout -b minha-feature
+    ```
+
+3. **Commit** suas alterações:
+
+    ```bash
+    git commit -am 'Adiciona nova feature'
+    ```
+
+4. **Push** para a branch:
+
+    ```bash
+    git push origin minha-feature
+    ```
+
+5. Abra um **Pull Request**.
+
+## Licença
+
+Distribuído sob a **Licença MIT**. Veja o arquivo [LICENSE](LICENSE) para mais informações.
 
 ## Contato
 
-Caso tenha dúvidas ou queira entrar em contato, sinta-se à vontade para abrir um **Issue** ou mandar uma mensagem diretamente!
+Caso tenha dúvidas ou queira entrar em contato, sinta-se à vontade para abrir um Issue ou mandar uma mensagem diretamente!
